@@ -1337,6 +1337,7 @@ MonoBehaviour:
   Player: {fileID: 513957025}
   ScoreText: {fileID: 1509342436}
   Timertext: {fileID: 968712582}
+  Particles: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!1 &513957027
 GameObject:
   m_ObjectHideFlags: 0

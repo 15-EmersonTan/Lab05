@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject Player;
     public GameObject ScoreText;
     public GameObject Timertext;
+    public GameObject Particles;
     public static float timeremaining;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class PlayerScript : MonoBehaviour
         {
             Score+= 10;
             Destroy(other.gameObject);
+            Instantiate(Particles, other.transform.position, Quaternion.identity);
         }
         if (other.gameObject.tag == "Water")
         {
